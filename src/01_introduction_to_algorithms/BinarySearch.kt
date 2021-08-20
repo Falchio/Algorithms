@@ -24,10 +24,10 @@ fun List<Int>.binarySearch(item: Int): Int? {
         }
         if (guess > item) {
             max = mid - 1
-            println("загадано число: $item; догадка равна ${this[mid]}; снижаем верхнюю границу до: $max")
+            println("загадано число: $item; догадка равна $guess; снижаем верхнюю границу до: $max")
         } else {
             min = mid + 1
-            println("загадано число: $item; догадка равна ${this[mid]}; повышаем нижнюю границу до: $min")
+            println("загадано число: $item; догадка равна $guess; повышаем нижнюю границу до: $min")
         }
         i++
     }
