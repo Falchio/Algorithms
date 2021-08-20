@@ -1,11 +1,13 @@
 package `01_introduction_to_algorithms`
 
+import kotlin.math.log2
+
 fun main() {
-    print(sortedArray.binarySearch(99))
+    val sortedArray = (1..256 step 1).toList()
+    println("Позиция искомого числа: ${sortedArray.binarySearch(99)}")
+    val bigO = log2(sortedArray.size.toDouble())
+    println("О-большое в данном случае равно: $bigO")
 }
-
-
-val sortedArray = (0..128 step 1).toList()
 
 
 fun List<Int>.binarySearch(item: Int): Int? {
