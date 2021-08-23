@@ -1,4 +1,4 @@
-package `01_introduction_to_algorithms`
+package com.falchio.algorithms.chapter01_introduction_to_algorithms
 
 import kotlin.math.log2
 
